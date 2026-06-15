@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/2494593/Documents/cts-repos/apache_poi/hello_testng/src/test/java/org/example/OrangeHRMLoginTest1.java">
+    <classes>
+        <class name="org.example.DependencyMethods">
+        </class>
+    </classes>
+</test>
+</suite>
