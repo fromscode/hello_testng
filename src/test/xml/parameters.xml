@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="XML Parameters" parallel="methods" thread-count="3">
+    <test name="Using parameters">
+        <classes>
+            <class name="org.example.XMLParameters">
+                <parameter name="browser" value="chrome"/>
+                <parameter name="url" value="https://www.youtube.com"/>
+                <parameter name="title" value="YouTube"/>
+            </class>
+        </classes>
+    </test>
+</suite>
