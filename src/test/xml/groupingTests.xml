@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="methods" thread-count="3">
+    <test name="Parallel tests">
+        <groups>
+            <run>
+                <include name="functional"/>
+                <exclude name="sanity"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.GroupingTests1"/>
+            <class name="org.example.GroupingTests2"/>
+        </classes>
+    </test>
+</suite>
