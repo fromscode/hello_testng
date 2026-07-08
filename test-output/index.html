@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Invocation_Demo" class="navigator-link">
-              <span class="suite-name border-passed">Invocation Demo</span>
+            <a href="#" panel-name="suite-RetryAnalyzer" class="navigator-link">
+              <span class="suite-name border-failed">RetryAnalyzer</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Invocation_Demo" class="navigator-link ">
-                    <span>C:\Users\2494593\Documents\cts-repos\apache_poi\hello_testng\src\test\xml\invocationDemo.xml</span>
+                  <a href="#" panel-name="test-xml-RetryAnalyzer" class="navigator-link ">
+                    <span>C:\Users\2494593\Documents\cts-repos\apache_poi\hello_testng\src\test\xml\retryAnalyzerDemo.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Invocation_Demo" class="navigator-link ">
+                  <a href="#" panel-name="testlist-RetryAnalyzer" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Invocation_Demo" class="navigator-link ">
+                  <a href="#" panel-name="group-RetryAnalyzer" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Invocation_Demo" class="navigator-link ">
+                  <a href="#" panel-name="times-RetryAnalyzer" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Invocation_Demo" class="navigator-link ">
+                  <a href="#" panel-name="reporter-RetryAnalyzer" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Invocation_Demo" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-RetryAnalyzer" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Invocation_Demo" class="navigator-link ">
+                  <a href="#" panel-name="chronological-RetryAnalyzer" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,41 +92,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,  3 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Invocation_Demo" class="hide-methods passed suite-Invocation_Demo"> (hide)</a> <!-- hide-methods passed suite-Invocation_Demo -->
-                      <a href="#" panel-name="suite-Invocation_Demo" class="show-methods passed suite-Invocation_Demo"> (show)</a> <!-- show-methods passed suite-Invocation_Demo -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-RetryAnalyzer" class="hide-methods failed suite-RetryAnalyzer"> (hide)</a> <!-- hide-methods failed suite-RetryAnalyzer -->
+                      <a href="#" panel-name="suite-RetryAnalyzer" class="show-methods failed suite-RetryAnalyzer"> (show)</a> <!-- show-methods failed suite-RetryAnalyzer -->
                     </span>
-                    <div class="method-list-content passed suite-Invocation_Demo">
+                    <div class="method-list-content failed suite-RetryAnalyzer">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Invocation_Demo" title="org.example.InvocationDemo" class="method navigator-link" hash-for-method="foo">foo</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RetryAnalyzer" title="org.example.RetryAnalyzerDemo" class="method navigator-link" hash-for-method="foo">foo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-RetryAnalyzer -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-RetryAnalyzer" class="hide-methods skipped suite-RetryAnalyzer"> (hide)</a> <!-- hide-methods skipped suite-RetryAnalyzer -->
+                      <a href="#" panel-name="suite-RetryAnalyzer" class="show-methods skipped suite-RetryAnalyzer"> (show)</a> <!-- show-methods skipped suite-RetryAnalyzer -->
+                    </span>
+                    <div class="method-list-content skipped suite-RetryAnalyzer">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-RetryAnalyzer" title="org.example.RetryAnalyzerDemo" class="method navigator-link" hash-for-method="foo">foo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Invocation_Demo" title="org.example.InvocationDemo" class="method navigator-link" hash-for-method="foo">foo</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-RetryAnalyzer" title="org.example.RetryAnalyzerDemo" class="method navigator-link" hash-for-method="foo">foo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Invocation_Demo" title="org.example.InvocationDemo" class="method navigator-link" hash-for-method="foo">foo</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-RetryAnalyzer" title="org.example.RetryAnalyzerDemo" class="method navigator-link" hash-for-method="foo">foo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Invocation_Demo" title="org.example.InvocationDemo" class="method navigator-link" hash-for-method="foo">foo</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Invocation_Demo" title="org.example.InvocationDemo" class="method navigator-link" hash-for-method="foo">foo</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Invocation_Demo -->
+                    </div> <!-- method-list-content skipped suite-RetryAnalyzer -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -137,11 +141,11 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Invocation_Demo" class="panel Invocation_Demo">
-          <div class="suite-Invocation_Demo-class-passed">
+        <div panel-name="suite-RetryAnalyzer" class="panel RetryAnalyzer">
+          <div class="suite-RetryAnalyzer-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">org.example.InvocationDemo</span>
+              <img src="failed.png"/>
+              <span class="class-name">org.example.RetryAnalyzerDemo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -149,202 +153,185 @@
                   <a name="foo">
                   </a> <!-- foo -->
                   <span class="method-name">foo</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="foo">
-                  </a> <!-- foo -->
-                  <span class="method-name">foo</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="foo">
-                  </a> <!-- foo -->
-                  <span class="method-name">foo</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="foo">
-                  </a> <!-- foo -->
-                  <span class="method-name">foo</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="foo">
-                  </a> <!-- foo -->
-                  <span class="method-name">foo</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Sauce Demo] but found [Swag Labs]
+	at org.example.RetryAnalyzerDemo.foo(RetryAnalyzerDemo.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Invocation_Demo-class-passed -->
-        </div> <!-- panel Invocation_Demo -->
-        <div panel-name="test-xml-Invocation_Demo" class="panel">
+          </div> <!-- suite-RetryAnalyzer-class-failed -->
+          <div class="suite-RetryAnalyzer-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">org.example.RetryAnalyzerDemo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="foo">
+                  </a> <!-- foo -->
+                  <span class="method-name">foo</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Sauce Demo] but found [Swag Labs]
+	at org.example.RetryAnalyzerDemo.foo(RetryAnalyzerDemo.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="foo">
+                  </a> <!-- foo -->
+                  <span class="method-name">foo</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Sauce Demo] but found [Swag Labs]
+	at org.example.RetryAnalyzerDemo.foo(RetryAnalyzerDemo.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="foo">
+                  </a> <!-- foo -->
+                  <span class="method-name">foo</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Sauce Demo] but found [Swag Labs]
+	at org.example.RetryAnalyzerDemo.foo(RetryAnalyzerDemo.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RetryAnalyzer-class-skipped -->
+        </div> <!-- panel RetryAnalyzer -->
+        <div panel-name="test-xml-RetryAnalyzer" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\2494593\Documents\cts-repos\apache_poi\hello_testng\src\test\xml\invocationDemo.xml</span>
+            <span class="header-content">C:\Users\2494593\Documents\cts-repos\apache_poi\hello_testng\src\test\xml\retryAnalyzerDemo.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Invocation Demo&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Invocation Demo Test&quot;&gt;
+&lt;suite name=&quot;RetryAnalyzer&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Retry Analyzer Demo&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.example.InvocationDemo&quot;/&gt;
+      &lt;class name=&quot;org.example.RetryAnalyzerDemo&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Invocation Demo Test --&gt;
-&lt;/suite&gt; &lt;!-- Invocation Demo --&gt;
+  &lt;/test&gt; &lt;!-- Retry Analyzer Demo --&gt;
+&lt;/suite&gt; &lt;!-- RetryAnalyzer --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Invocation_Demo" class="panel">
+        <div panel-name="testlist-RetryAnalyzer" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Invocation Demo</span>
+            <span class="header-content">Tests for RetryAnalyzer</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Invocation Demo Test (1 class)</span>
+                <span class="test-name">Retry Analyzer Demo (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Invocation_Demo" class="panel">
+        <div panel-name="group-RetryAnalyzer" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Invocation Demo</span>
+            <span class="header-content">Groups for RetryAnalyzer</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Invocation_Demo" class="panel">
+        <div panel-name="times-RetryAnalyzer" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Invocation Demo</span>
+            <span class="header-content">Times for RetryAnalyzer</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Invocation_Demo');
-function tableData_Invocation_Demo() {
+suiteTableInitFunctions.push('tableData_RetryAnalyzer');
+function tableData_RetryAnalyzer() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'foo')
-data.setCell(0, 2, 'org.example.InvocationDemo')
-data.setCell(0, 3, 385);
+data.setCell(0, 2, 'org.example.RetryAnalyzerDemo')
+data.setCell(0, 3, 11202);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'foo')
-data.setCell(1, 2, 'org.example.InvocationDemo')
-data.setCell(1, 3, 318);
+data.setCell(1, 2, 'org.example.RetryAnalyzerDemo')
+data.setCell(1, 3, 8219);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'foo')
-data.setCell(2, 2, 'org.example.InvocationDemo')
-data.setCell(2, 3, 288);
+data.setCell(2, 2, 'org.example.RetryAnalyzerDemo')
+data.setCell(2, 3, 8211);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'foo')
-data.setCell(3, 2, 'org.example.InvocationDemo')
-data.setCell(3, 3, 273);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'foo')
-data.setCell(4, 2, 'org.example.InvocationDemo')
-data.setCell(4, 3, 270);
-window.suiteTableData['Invocation_Demo']= { tableData: data, tableDiv: 'times-div-Invocation_Demo'}
+data.setCell(3, 2, 'org.example.RetryAnalyzerDemo')
+data.setCell(3, 3, 7169);
+window.suiteTableData['RetryAnalyzer']= { tableData: data, tableDiv: 'times-div-RetryAnalyzer'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
-              <div id="times-div-Invocation_Demo">
-              </div> <!-- times-div-Invocation_Demo -->
+              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <div id="times-div-RetryAnalyzer">
+              </div> <!-- times-div-RetryAnalyzer -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Invocation_Demo" class="panel">
+        <div panel-name="reporter-RetryAnalyzer" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Invocation Demo</span>
+            <span class="header-content">Reporter output for RetryAnalyzer</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Invocation_Demo" class="panel">
+        <div panel-name="ignored-methods-RetryAnalyzer" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Invocation_Demo" class="panel">
+        <div panel-name="chronological-RetryAnalyzer" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.example.InvocationDemo</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
+              <div class="chronological-class-name">org.example.RetryAnalyzerDemo</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">foo</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">foo</span>
-                <span class="method-start">6897 ms</span>
+                <span class="method-start">8222 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">7170 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">8716 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">foo</span>
-                <span class="method-start">13220 ms</span>
+                <span class="method-start">15393 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">13510 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">15156 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">foo</span>
-                <span class="method-start">18238 ms</span>
+                <span class="method-start">26595 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">18623 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">20308 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">foo</span>
-                <span class="method-start">23182 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">23500 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">25054 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">foo</span>
-                <span class="method-start">28440 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">28710 ms</span>
-              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
